@@ -2,98 +2,46 @@
 
 A comprehensive exploratory and inferential statistical analysis investigating the relationship between cognitive ability (IQ) and academic performance (GPA).
 
----
-
 ## Dataset Overview
 
 | Column | Description |
 |--------|-------------|
-| `obs` | Observation ID |
-| `gpa` | Grade Point Average (0–4.5 scale) |
-| `iq` | IQ score (range: ~70–135) |
-| `gender` | Gender (1 = male, 2 = female) |
-| `concept` | Conceptual understanding score |
+| obs | Observation ID |
+| gpa | Grade Point Average (0–4.5 scale) |
 
-**Sample size:** 78 students
-
----
-
-## Analyses Performed
-
-1. **Exploratory Data Analysis (EDA)**
-   - Distribution analysis
-   - Scatter plots and correlations
-   - Gender-based comparisons
-
-2. **Correlation Analysis**
-   - Pearson correlation between all variable pairs
-   - Key finding: IQ–GPA correlation r = 0.6483
-
-3. **Linear Regression — IQ → GPA**
-   - Simple OLS regression
-   - R² = 0.4203 (IQ explains ~42% of GPA variance)
-
-4. **Residual Analysis**
-   - Normality testing
-   - Heteroscedasticity assessment
+[rest of your table...]
 
 ---
 
 ## Visualizations
 
 <p align="center">
-  <img src="images/Combined_SS.png" alt="EDA Dashboard" width="900">
+  <img src="Combined_graphs .png" alt="EDA Dashboard" width="900">
 </p>
 
-### Interpretation
+### Analysis Breakdown
 
-**Distribution of GPA** (Top Left)
-- Approximately normal distribution centered at μ ≈ 3.0
-- KDE overlay confirms normality assumption
+**Panel 1 - GPA Distribution** (Top Left)
+- Normal distribution with mean ≈ 3.0
+- KDE overlay confirms bell curve shape
 
-**Relationship between IQ and GPA** (Top Right)
-- Strong positive correlation (r = 0.65, p < 0.001)
-- Gender shows minimal impact on the relationship
-- Linear pattern validates regression approach
+**Panel 2 - IQ vs GPA** (Top Right)  
+- Clear positive correlation (r = 0.65)
+- Gender-coded scatter shows consistent pattern
 
-**Variable Correlation Heatmap** (Bottom Left)
-- IQ is the strongest predictor of GPA (r = 0.65)
-- Gender shows near-zero correlation with GPA (r = -0.10)
-- Concept score moderately correlates with both IQ and GPA
+**Panel 3 - Correlation Matrix** (Bottom Left)
+- Heatmap reveals IQ as dominant predictor
+- Gender shows minimal correlation (-0.10)
 
-**GPA Spread by Gender** (Bottom Right)
-- Similar median values (~3.0) for both groups
-- Comparable variance suggests gender is not a significant factor
-- Supports finding that gender correlation is negligible
+**Panel 4 - Gender Comparison** (Bottom Right)
+- Overlapping box plots indicate similar performance
+- No statistically significant gender difference
 
 ---
 
 ## Key Results
 
-| Metric | Value |
-|--------|-------|
-| **Pearson r (IQ–GPA)** | 0.6483 |
-| **R²** | 0.4203 |
-| **p-value** | < 0.001 |
-| **Sample size** | 78 |
-| **Residual std. dev.** | 0.68 |
-
----
-
-## Conclusions
-
-The analysis provides strong statistical evidence that **IQ is a significant positive predictor of GPA** (p < 0.001). The linear model is valid:
-
-✅ Residuals are approximately normal and centered at zero  
-✅ No strong heteroscedasticity detected  
-✅ R² = 0.42 indicates moderate explanatory power
-
-However, with ~58% of GPA variance remaining unexplained by IQ alone, other factors such as study habits, motivation, and conceptual understanding play important roles in academic success.
-
----
-
-## How to Reproduce
-```bash
+[rest of your README...]```bash
 # Clone the repository
 git clone https://github.com/21hanny/EDA_Statistical_analysis.git
 
