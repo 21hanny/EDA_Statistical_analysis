@@ -40,7 +40,7 @@ Residuals are approximately normally distributed and centred at zero
 
 Residuals vs. IQ (predictor) scatter plot
 Dotted trend line to detect systematic patterns
-Residual spread is reasonably consistent across IQ values, supporting the linear model assumption
+Residual spread is reasonably consistent across IQ values, supporting the linear model assumptions
 
 
 Key Results
