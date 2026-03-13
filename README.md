@@ -79,6 +79,7 @@ Residual spread remains consistent across IQ values, confirming constant varianc
 The analysis provides strong statistical evidence that **IQ is a significant positive predictor of GPA**. However, with R² ≈ 0.42, approximately **58% of GPA variance remains unexplained**, suggesting other factors (study habits, motivation, conceptual understanding) play important roles.
 
 The linear model is valid:
+
 ✅ Residuals are approximately normal  
 ✅ Residuals centered at zero  
 ✅ No strong heteroscedasticity detected
@@ -107,6 +108,3 @@ jupyter notebook analysis.ipynb
 
 ---
 
-## Author
-
-**Sourabh Saini** ([@21hanny](https://github.com/21hanny))
